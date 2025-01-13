@@ -1,5 +1,9 @@
 # DevTools Component
 
+
+https://github.com/user-attachments/assets/eb03a686-6502-4d52-ae79-7fddd073848a
+
+
 A modern, reusable, and customizable developer tools component for React applications. This package provides a clean UI for inspecting routes, managing packages, and handling assets and components in your project.
 
 ---
