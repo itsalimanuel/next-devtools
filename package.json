@@ -2,26 +2,45 @@
   "name": "next-devtools",
   "version": "0.1.0",
   "private": true,
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "rollup -c",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
+    "child_process": "^1.0.2",
+    "fs": "0.0.1-security",
+    "next": "15.1.4",
+    "path": "^0.12.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.1.4"
+    "react-icons": "^5.4.0",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.30.1"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-typescript": "^12.1.2",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "axios": "^1.7.9",
     "eslint": "^9",
     "eslint-config-next": "15.1.4",
-    "@eslint/eslintrc": "^3"
+    "postcss": "^8",
+    "rollup-plugin-swc": "^0.2.1",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }
